@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "JavAssistant Ultimate",
+  "version": "24.0",
+  "permissions": ["storage", "contextMenus", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["content.css"]
+  }]
+}
